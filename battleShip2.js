@@ -1,7 +1,7 @@
 function makeGrid(color) {
     var grid = document.createElement("div");
-    grid.style.width = "13.26%";
-    grid.style.paddingBottom = "13.26%";
+    grid.style.width = "70px";
+    grid.style.paddingBottom = "70px";
     // grid.style.paddingBottom = "14.28%";
     grid.style.float = "left";
     grid.style.background = color;
@@ -35,7 +35,9 @@ function createGrid(n) {
 }
 
 
-createGrid(49);
+createGrid(50);
+
+
 
 // 
 
@@ -47,6 +49,18 @@ for(var i=0; i < tiles.length; i++){
 function changeColor(event){
   this.style.backgroundColor = "red";
 }
+
+// window.onload = function() {
+//   ...
+
+//   var name = localStorage.getItem('form-control');
+
+//   if (name != "undefined" || name != "null") {
+//     document.getElementById('welcomeMessage').innerHTML = "Hello " + name + "!";
+//   } else
+//     document.getElementById('welcomeMessage').innerHTML = "Hello!";
+//   }
+// }
 
 
 // function createScoreBox(n){
