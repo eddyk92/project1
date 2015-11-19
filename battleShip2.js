@@ -50,6 +50,20 @@ function changeColor(event){
   this.style.backgroundColor = "red";
 }
 
+
+var name = localStorage.getItem('username');
+var val = document.getElementsByTagName('input')[name="password"].value 
+
+//  var btn = document.getElementById("btn");
+
+// btn.addEventListener("click", function() { 
+//   var val = document.getElementsByTagName('input')[name="password"].value
+
+//   localStorage.setItem('password', val);
+// });
+
+
+
 // window.onload = function() {
 //   ...
 
