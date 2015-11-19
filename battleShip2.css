@@ -1,48 +1,48 @@
+.navbar .navbar-default {
+	background-color: ##66c1ff;
+    border-color: #E7E7E7;
+}
+
 body {
 	background-image: url(http://freetiiupixscnry.cwahi.net/images/stormy_sea/ocean_waves_3_FreeTiiuPix.com.JPG); 	
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
-.jumbotron {
-	background-color: #0065cc;
-}
-
-
 .score {
-	width: 300px;
+	width: 100px;
 	
 	margin-top: 140px;
 /*	padding-top: 205px;*/
 	padding-left: 100px;
 	border: 5px solid #ddd;
 	float: right ;
-	background: #0065cc;
+	background: #99d6ff;
 }
 
 #container {
-	width: 750px;
+	width: 390px;
 	margin: auto;
 	/*margin-right: 45px;*/
 	margin-top: 50px;
 	/*margin-bottom: 100px;*/
 	padding-top: 50px;
-	border: 25px solid #ddd;
+	border: 15px solid #0089e6;
+	border-radius: 12px;
 	float: realtive;
 	
 }
 
-.userName {
+/*.userName {
 	width: 300px;
 	
 	margin-top: 140px;
-/*	padding-top: 205px;*/
+	padding-top: 205px;
 	padding-left: 100px;
 	border: 5px solid #ddd;
 	float: left;
-	background: #0065cc;
-}
+/*background: #0065cc;
+}*/
 
 
 .group:before,
@@ -57,6 +57,8 @@ body {
     zoom: 1; 
 }
 
+
+
 .userName {
 	margin-top: 140px;
 	/*padding-top: 205px;
@@ -65,4 +67,5 @@ body {
 	float: left;
 	background: #0065cc;
 }
+
 
