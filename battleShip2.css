@@ -1,6 +1,68 @@
-#container {
-	width: 50%;
-	margin: auto;
-	padding-top: 5%;
+body {
+	background-image: url(http://freetiiupixscnry.cwahi.net/images/stormy_sea/ocean_waves_3_FreeTiiuPix.com.JPG); 	
+	background-repeat: no-repeat;
+	background-size: cover;
 }
- 	
+
+
+.jumbotron {
+	background-color: #0065cc;
+}
+
+
+.score {
+	width: 300px;
+	
+	margin-top: 140px;
+/*	padding-top: 205px;*/
+	padding-left: 100px;
+	border: 5px solid #ddd;
+	float: right ;
+	background: #0065cc;
+}
+
+#container {
+	width: 750px;
+	margin: auto;
+	/*margin-right: 45px;*/
+	margin-top: 50px;
+	/*margin-bottom: 100px;*/
+	padding-top: 50px;
+	border: 25px solid #ddd;
+	float: realtive;
+	
+}
+
+.userName {
+	width: 300px;
+	
+	margin-top: 140px;
+/*	padding-top: 205px;*/
+	padding-left: 100px;
+	border: 5px solid #ddd;
+	float: left;
+	background: #0065cc;
+}
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; 
+}
+
+.userName {
+	margin-top: 140px;
+	/*padding-top: 205px;
+	padding-right: 100px;
+	border: 5px solid #ddd;
+	float: left;
+	background: #0065cc;
+}
+
