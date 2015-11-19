@@ -1,12 +1,12 @@
 function makeGrid(color) {
     var grid = document.createElement("div");
-    grid.style.width = "70px";
-    grid.style.paddingBottom = "70px";
+    grid.style.width = "40px";
+    grid.style.paddingBottom = "40px";
     // grid.style.paddingBottom = "14.28%";
     grid.style.float = "left";
     grid.style.background = color;
     grid.style.borderStyle = 'solid';
-    grid.style.borderColor = 'silver';
+    grid.style.borderColor = '#66c1ff';
     grid.addEventListener("click", function() {
       console.log("color");
     });
@@ -24,35 +24,81 @@ function createGrid(n) {
   container.setAttribute('class', 'group');
 
   for (var i = 0; i < n; i++) {
-     color = "white";
+      color = "#99d6ff";
 
-     grid = makeGrid(color);
-     grid.setAttribute('class', 'tile')
+      grid = makeGrid(color);
+      grid.setAttribute('class', 'tile')
 
-    container.appendChild(grid);
+      container.appendChild(grid);
   }
- document.body.appendChild(container);
+  document.body.appendChild(container);
 }
 
 
-createGrid(50);
+createGrid(72);
 
-
-
-// 
 
 var tiles = document.getElementsByClassName('tile');
 
-for(var i=0; i < tiles.length; i++){
-  tiles[i].addEventListener('click',changeColor);
-}
+    for(var i=0; i < tiles.length; i++){
+    tiles[i].addEventListener('click',changeColor);
+    }
+
 function changeColor(event){
-  this.style.backgroundColor = "red";
+    this.style.backgroundColor = "red";
 }
 
 
 var name = localStorage.getItem('username');
-var val = document.getElementsByTagName('input')[name="password"].value 
+// var val = document.getElementsByTagName('input')[name="password"].value 
+
+document.getElementById("username").textContent = name
+console.log(name);
+
+
+document.userName
+
+
+
+
+// game.prototype.shotListener = function(e) {
+//   var self = e.target.self;
+//   var x = parseInt(e.target.getAttribute('data-x'), 9)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  var btn = document.getElementById("btn");
 
