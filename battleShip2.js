@@ -45,20 +45,11 @@ function createGrid(n) {
   document.body.appendChild(container);
 }
 
-function randomShips() {
-  var xCoord = Math.floor(Math.random() * 9) + 1;
-  var yCoord = Math.floor(Math.random() * 9) + 1;
-
-  return xCoord.toString() + yCoord.toString();
-}
-
-// var ship = {
-  document.getElementById(randomShips())
+  // ship.setAttribute('data-ship',true);
   // document.randomShips.style.background = 'green';
 // }
 // document.randomShips(data-ship) = true;
 // how would i change the background color of this div
-
 
 // use randomShps return--e.g., "88"--to find the div with an id of "88"
 // give that div an attribute with a key "data-ship" and value true
@@ -68,6 +59,17 @@ function randomShips() {
 
 // createGrid(14);
  createGrid(89);
+
+ function randomShips() {
+   var xCoord = Math.floor(Math.random() * 9) + 1;
+   var yCoord = Math.floor(Math.random() * 9) + 1;
+
+   return xCoord.toString() + yCoord.toString();
+ }
+   
+   var ship = randomShips();
+   document.getElementById(ship).setAttribute("data-ship",true);
+   console.log(ship);
 
 
 var tiles = document.getElementsByClassName('tile');
