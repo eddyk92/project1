@@ -10,9 +10,14 @@ function makeGrid(color) {
     grid.style.background = color;
     grid.style.borderStyle = 'solid';
     grid.style.borderColor = '#66c1ff';
-    grid.addEventListener("click", function() {
-      console.log("color");
+    grid.addEventListener("click", function(e) {
+      var currentDiv = e.target;
+
+      if (currentDiv.getAttribute("data-ship") === "true") {
+        currentDiv.style.backgroundColor = "green";
+      }
     });
+
 
     return grid;
 }
