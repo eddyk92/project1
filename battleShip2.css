@@ -4,21 +4,21 @@
 }
 
 body {
-	background-image: url(http://freetiiupixscnry.cwahi.net/images/stormy_sea/ocean_waves_3_FreeTiiuPix.com.JPG); 	
+	background-image: url("../project1/ocean_waves_3_FreeTiiuPix.com.JPG"); 	
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.score {
+/*.score {
 	width: 100px;
 	
 	margin-top: 140px;
-/*	padding-top: 205px;*/
+	padding-top: 205px;
 	padding-left: 100px;
 	border: 5px solid #ddd;
 	float: right ;
 	background: #99d6ff;
-}
+}*/
 
 #container {
 	/*width: 630px;*/
@@ -35,7 +35,7 @@ body {
 	
 }
 
-/*.userName {
+/**.how2play {
 	width: 300px;
 	
 	margin-top: 140px;
@@ -43,7 +43,7 @@ body {
 	padding-left: 100px;
 	border: 5px solid #ddd;
 	float: left;
-/*background: #0065cc;
+*//*background: #0065cc;
 }*/
 
 
@@ -59,11 +59,13 @@ body {
     zoom: 1; 
 }
 
+audio {
+	display: none;
+}
 
-
-.userName {
+/*.userName {
 	margin-top: 140px;
-	/*padding-top: 205px;
+*/	/*padding-top: 205px;
 	padding-right: 100px;
 	border: 5px solid #ddd;
 	float: left;
