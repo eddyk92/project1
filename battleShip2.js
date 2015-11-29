@@ -1,3 +1,7 @@
+function oceanSound (e){
+      var audioElement = e.ocean;
+        currentDiv.audioElement('src','http://www.mediacollege.com/downloads/sound-effects/nature/seaside/seaside-01.wav');
+      }
 // make game board
 function makeGrid(color) {
     var grid = document.createElement("div");
@@ -16,11 +20,24 @@ function makeGrid(color) {
       if (currentDiv.getAttribute("data-ship") === "true") {
         currentDiv.style.backgroundColor = "green";
       }
-    });
+  function bombSound (e){
+      var audioElement = e.shipHit;
+      if (currentDiv.getAttribute("data-ship") === "true") {
+        currentDiv.audioElement('src','http://download.gameszone.ro/cs/sound/BigExplosion.wav');
+      }
+
+    }});
 
 
     return grid;
 }
+
+alert ("Salutations Friend.\nWelcome to this one of a kind, highly simplified rendition of Battleship!");
+alert ("See that nifty super awesome grid below?\nWell, that's the ocean, and in that ocean there are four, YES 4! Battleships, doing battleship stuff.\n You don't like that, Your job is to blow their shit up!!");
+alert ("Find where they're at and drop a Fat Man on em' by clicking on each individual tile.");
+alert ("But HURRY!\nYou're being timed.\nDon't Let them get away!");
+
+
 
 // make 
 function createGrid(n) {
@@ -62,19 +79,63 @@ function createGrid(n) {
 
 
 
-// createGrid(14);
+// createShips(4);
  createGrid(89);
 
- function randomShips() {
+ function randomShip(n) {
+
    var xCoord = Math.floor(Math.random() * 9) + 1;
    var yCoord = Math.floor(Math.random() * 9) + 1;
 
    return xCoord.toString() + yCoord.toString();
- }
-   
-   var ship = randomShips();
-   document.getElementById(ship).setAttribute("data-ship",true);
-   console.log(ship);
+ 
+  } 
+ var ship = randomShip();
+ document.getElementById(ship).setAttribute("data-ship",true);
+ console.log(ship);
+
+ function randomShip(n) {
+
+   var xCoord = Math.floor(Math.random() * 9) + 1;
+   var yCoord = Math.floor(Math.random() * 9) + 1;
+
+   return xCoord.toString() + yCoord.toString();
+ 
+  } 
+ var ship = randomShip();
+ document.getElementById(ship).setAttribute("data-ship",true);
+ console.log(ship);
+
+  function randomShip(n) {
+
+   var xCoord = Math.floor(Math.random() * 9) + 1;
+   var yCoord = Math.floor(Math.random() * 9) + 1;
+
+   return xCoord.toString() + yCoord.toString();
+ 
+  } 
+ var ship = randomShip();
+ document.getElementById(ship).setAttribute("data-ship",true);
+ console.log(ship);
+
+  function randomShip(n) {
+
+   var xCoord = Math.floor(Math.random() * 9) + 1;
+   var yCoord = Math.floor(Math.random() * 9) + 1;
+
+   return xCoord.toString() + yCoord.toString();
+ 
+  } 
+ var ship = randomShip();
+ document.getElementById(ship).setAttribute("data-ship",true);
+ console.log(ship);
+
+
+
+
+//step 1: create function called makeShip = makes 1 ship 68-77
+//step 2: create function called createShips interates for loop = 4 ship
+//stretch goal replace background color green with image sunken ship
 
 
 var tiles = document.getElementsByClassName('tile');
@@ -97,6 +158,40 @@ console.log(name);
 
 document.userName
 
+function countDown(){
+  this.start_time ="30:00";
+  this.target_id ="#timer";
+  this.name = "timer";
+}
+
+countDown.prototype.init = function(){
+  this.reset();
+  setInterval(this.name + '.tick()', 1000);
+}
+
+countDown.prototype.reset = function(){
+  time = this.start_time.split(":");
+  this.minutes = parseInt(time[0]);
+  this.seconds = parseInt(time[1]);
+  this.update_target();
+}
+
+countDown.prototype.tick = function(){
+  if(this.seconds > 0 && this.minutes > 0){
+    if(this.seconds ==0){
+      this.minutes = this.minutes -1;
+      this.seconds = 59
+    } else {
+      this.seconds = this.seconds -1;
+    }
+  }
+  this.update_target()
+}
+countDown.prototype.update_target = function(){
+  seconds = this.seconds;
+  if(seconds < 10) seconds = "0" + seconds;
+  $(this.target_id).val(this.minutes + ":" + seconds)
+}
 
 
 //  var btn = document.getElementById("btn");
