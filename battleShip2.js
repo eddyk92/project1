@@ -33,8 +33,8 @@ function makeGrid(color) {
 }
 
 alert ("Salutations Friend.\nWelcome to this one of a kind, highly simplified rendition of Battleship!");
-alert ("See that nifty super awesome grid below?\nWell, that's the ocean, and in that ocean there are four, YES 4! Battleships, doing battleship stuff.\n You don't like that, Your job is to blow their shit up!!");
-alert ("Find where they're at and drop a Fat Man on em' by clicking on each individual tile.");
+alert ("Soon you will see a super awesome grid below.\nThat's the ocean, and in that ocean there are four super scary Battleships... doing battleship stuff.\n You don't like that, Your job is to blow their shit up!!");
+alert ("Find where they're at and drop a Fat Man on em' by clicking on each tile.");
 alert ("But HURRY!\nYou're being timed.\nDon't Let them get away!");
 
 
