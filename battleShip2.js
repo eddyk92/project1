@@ -14,19 +14,18 @@ function makeGrid(color) {
     grid.style.background = color;
     grid.style.borderStyle = 'solid';
     grid.style.borderColor = '#66c1ff';
+    
     grid.addEventListener("click", function(e) {
       var currentDiv = e.target;
 
       if (currentDiv.getAttribute("data-ship") === "true") {
         currentDiv.style.backgroundColor = "green";
+        var audio  = document.getElementsByTagName('audio')[0];
+        audio.play();
       }
-  function bombSound (e){
-      var audioElement = e.shipHit;
-      if (currentDiv.getAttribute("data-ship") === "true") {
-        currentDiv.audioElement('src','http://download.gameszone.ro/cs/sound/BigExplosion.wav');
-      }
+  
 
-    }});
+     });
 
 
     return grid;
@@ -63,8 +62,11 @@ function createGrid(n) {
     }
   }
 
+  var audio = document.createElement('audio');
+  audio.setAttribute('src', 'http://download.gameszone.ro/cs/sound/BigExplosion.wav');
 
   document.body.appendChild(container);
+  container.appendChild(audio);
 }
 
   // ship.setAttribute('data-ship',true);
